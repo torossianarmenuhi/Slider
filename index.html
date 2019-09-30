@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slide Show </title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a9f6276ba7.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="flex-container ">
+      <div id = "mainContainer" class="mainContainer">
+          <img class="image" id = "image">
+          <div class="pause" id = "pauseDiv">
+            <i id = "pause" class="fas fa-pause"></i>
+          </div>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="dots">
+        <span id = "dot 1" class="dot 1" onclick="showCurrent(1)"></span>
+        <span id = "dot 2" class="dot 2" onclick="showCurrent(2)"></span>
+        <span id = "dot 3" class="dot 3" onclick="showCurrent(3)"></span>
+        <span id = "dot 4" class="dot 4" onclick="showCurrent(4)"></span>
+        <span id = "dot 5" class="dot 5" onclick="showCurrent(5)"></span>
+      </div>
+    </div>
+    <div id = "next" class="rightArrow rightPosition" onclick="next()">
+      <i  class="fas fa-chevron-right"></i>
+    </div>
+    <div  id = "previous" class="leftArrow leftPosition" onclick="prev()">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
